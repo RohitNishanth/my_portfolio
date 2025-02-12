@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="color-1.css">
     <link rel="stylesheet" href="style-switcher.css">
     <link rel="stylesheet" href="color-1.css" class="alternate-style" title="color-1" disabled>
     <link rel="stylesheet" href="color-2.css" class="alternate-style" title="color-2" disabled>
@@ -12,27 +11,33 @@
     <link rel="stylesheet" href="color-4.css" class="alternate-style" title="color-4" disabled>
     <link rel="stylesheet" href="color-5.css" class="alternate-style" title="color-5" disabled>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>Rohit Nishanth - React JS Developer</title>
 </head>
 <body>
     <div class="main-container">
-        <div class="aside">
+        <!-- Header Section -->
+        <header class="aside">
             <div class="logo">
-               <a href="#"><span>A</span>tlas</a> 
+                <a href="#"><span>A</span>tlas</a>
             </div>
             <div class="nav-toggler">
                 <span></span>
             </div>
-            <ul class="nav">
-               <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li> 
-               <li><a href="#about"><i class="fa fa-user"></i>About</a></li> 
-               <li><a href="#services"><i class="fa fa-list"></i>Services</a></li> 
-               <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li> 
-               <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li> 
-            </ul>
-        </div>
-        <div class="main-content">
-            <section class="home section " id="home">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+                    <li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+                    <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
+                    <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+                    <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Home Section -->
+            <section class="home section" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
@@ -42,13 +47,14 @@
                             <p>My goal is to create seamless, responsive web solutions that deliver value to users and clients alike.</p>
                             <a href="#contact" class="btn hire-me">Connect 🙌🏻</a>
                         </div>
-                        
                         <div class="home-img padd-15">
-                            <img src="./IMAGES/rohit.jpeg" alt="myimage">
+                            <img src="./IMAGES/rohit.jpeg" alt="Rohit Nishanth">
                         </div>
                     </div>
                 </div>
             </section>
+
+            <!-- About Section -->
             <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
@@ -61,8 +67,7 @@
                             <div class="row">
                                 <div class="about-text padd-15">
                                     <h3>I'm Rohit Nishanth and <span>React JS Developer (Frontend Developer)</span></h3>
-<p>Enthusiastic React JS Developer with a solid foundation in web development and a passion for creating dynamic, high-performance web applications. Intern in Python Full Stack Development, with hands-on experience in developing and deploying projects using React, Redux, Django, and MySQL. Seeking to leverage my skills in a challenging role.</p>
-
+                                    <p>Enthusiastic React JS Developer with a solid foundation in web development and a passion for creating dynamic, high-performance web applications. Intern in Python Full Stack Development, with hands-on experience in developing and deploying projects using React, Redux, Django, and MySQL. Seeking to leverage my skills in a challenging role.</p>
                                 </div>
                             </div>
                             <div class="row">
@@ -75,31 +80,28 @@
                                             <p>Age : <span>20</span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p>Github : <span> <a href="https://github.com/RohitNishanth" >github.com/RohitNishanth</a></span></p>
+                                            <p>Github : <span><a href="https://github.com/RohitNishanth">github.com/RohitNishanth</a></span></p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p> Linkedin: <span><a href="https://www.linkedin.com/in/rohitns03/">linkedin.com/in/rohitns03</a></span></p>
+                                            <p>Linkedin : <span><a href="https://www.linkedin.com/in/rohitns03/">linkedin.com/in/rohitns03</a></span></p>
                                         </div>
                                         <div class="info-item padd-15">
                                             <p>Email : <span>rohitns2003p@gmail.com</span></p>
                                         </div>
-                                        
                                         <div class="info-item padd-15">
                                             <p>Phone : <span>9500664503</span></p>
                                         </div>
                                         <div class="info-item padd-15">
                                             <p>City : <span>Tuticorin</span></p>
                                         </div>
-                                        
                                         <div class="info-item padd-15">
                                             <p>Location : <span>Tuticorin, Tamilnadu</span></p>
                                         </div>
-                                        
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
                                             <a href="https://drive.google.com/file/d/13RwXMa9vw2L18xuM-nxnk_1pnrfZTJJa/view?usp=drivesdk" class="btn">Download CV</a>
-                                            <a href="#contact" class="btn hire-me">Hire me</a>
+                                            <a href="#contact" class="btn hire-me">Hire Me</a>
                                         </div>
                                     </div>
                                 </div>
@@ -107,28 +109,28 @@
                                     <div class="row">
                                         <div class="skill-item padd-15">
                                             <h5>React JS</h5>
-                                            <div class="progress ">
+                                            <div class="progress">
                                                 <div class="progress-in" style="width: 86%;"></div>
-                                                <div class="skill-percent">76%</div>
+                                                <div class="skill-percent">86%</div>
                                             </div>
                                         </div>
                                         <div class="skill-item padd-15">
-                                            <h5>PYTHON</h5>
-                                            <div class="progress ">
+                                            <h5>Python</h5>
+                                            <div class="progress">
                                                 <div class="progress-in" style="width: 66%;"></div>
                                                 <div class="skill-percent">66%</div>
                                             </div>
                                         </div>
                                         <div class="skill-item padd-15">
                                             <h5>Express JS</h5>
-                                            <div class="progress ">
+                                            <div class="progress">
                                                 <div class="progress-in" style="width: 96%;"></div>
                                                 <div class="skill-percent">96%</div>
                                             </div>
                                         </div>
                                         <div class="skill-item padd-15">
                                             <h5>Node JS</h5>
-                                            <div class="progress ">
+                                            <div class="progress">
                                                 <div class="progress-in" style="width: 76%;"></div>
                                                 <div class="skill-percent">76%</div>
                                             </div>
@@ -148,7 +150,7 @@
                                                         <i class="fa fa-calendar"></i> 2020 - 2024
                                                     </h3>
                                                     <h4 class="timeline-title">Bachelor of Technology</h4>
-                                                    <p class="timeline-text">Anna University , BIT campus, Trichy </p>
+                                                    <p class="timeline-text">Anna University, BIT Campus, Trichy</p>
                                                     <p class="timeline-text">CGPA - 8.1</p>
                                                 </div>
                                                 <div class="timeline-item">
@@ -156,7 +158,7 @@
                                                     <h3 class="timeline-date">
                                                         <i class="fa fa-calendar"></i> 2019 - 2020
                                                     </h3>
-                                                    <h4 class="timeline-title">St.Pauls Matriculation Higher Secondary School</h4>
+                                                    <h4 class="timeline-title">St. Pauls Matriculation Higher Secondary School</h4>
                                                     <p class="timeline-text">Percentage - 86.3%</p>
                                                 </div>
                                                 <div class="timeline-item">
@@ -164,7 +166,7 @@
                                                     <h3 class="timeline-date">
                                                         <i class="fa fa-calendar"></i> 2013 - 2015
                                                     </h3>
-                                                    <h4 class="timeline-title">St.Pauls Matriculation Higher Secondary School</h4>
+                                                    <h4 class="timeline-title">St. Pauls Matriculation Higher Secondary School</h4>
                                                     <p class="timeline-text">Percentage - 92%</p>
                                                 </div>
                                             </div>
@@ -179,39 +181,32 @@
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h3 class="timeline-date">
-                                                        <i class="fa fa-calendar"></i> 2024 
+                                                        <i class="fa fa-calendar"></i> 2024
                                                     </h3>
                                                     <h4 class="timeline-title">React JS Developer (Frontend Developer)</h4>
-<p class="timeline-text">Infonel Technologies - February 2024 - Present</p>
-
+                                                    <p class="timeline-text">Infonel Technologies - February 2024 - Present</p>
                                                 </div>
                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
-                                                    
-                                                    
-                                                   <ol> <li><p class="timeline-text">Developed dynamic web applications using HTML, CSS, JavaScript, and Python, with MySQL integration.</li></ol></div>
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <ol><li><p class="timeline-text">Successfully deployed  projects during the internship, each with a focus on user experience and performance
-                                                        optimization.</p></li>
+                                                    <ol>
+                                                        <li><p class="timeline-text">Developed dynamic web applications using HTML, CSS, JavaScript, and Python, with MySQL integration.</p></li>
+                                                        <li><p class="timeline-text">Successfully deployed projects during the internship, each with a focus on user experience and performance optimization.</p></li>
                                                         <li><p class="timeline-text">Improved page load speed by 30% and reduced application errors by 20% through optimized code and debugging.</p></li>
-                                                        <li><p class="timeline-text">Collaborated in agile sprints, delivering features on schedule and receiving positive feedback from team leads on
-                                                            code quality and teamwork.</p></li></ol>
-
-                                                </div>
-                                                
+                                                        <li><p class="timeline-text">Collaborated in agile sprints, delivering features on schedule and receiving positive feedback from team leads on code quality and teamwork.</p></li>
+                                                    </ol>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            <section class="service section main-content" id="services">
+
+            <!-- Services Section -->
+            <section class="service section" id="services">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -224,8 +219,7 @@
                                 <div class="icon">
                                     <i class="fa fa-mobile-alt"></i>
                                 </div>
-                                <h4>Mobile Web Design
-                                </h4>
+                                <h4>Mobile Web Design</h4>
                                 <p>Responsive designs ensuring smooth user experience on mobile devices.</p>
                             </div>
                         </div>
@@ -243,8 +237,7 @@
                                 <div class="icon">
                                     <i class="fa fa-palette"></i>
                                 </div>
-                                <h4>Front-End Development
-                                </h4>
+                                <h4>Front-End Development</h4>
                                 <p>Building dynamic, responsive websites using React and modern frameworks.</p>
                             </div>
                         </div>
@@ -278,7 +271,9 @@
                     </div>
                 </div>
             </section>
-            <section class="portfolio section main-content " id="portfolio">
+
+            <!-- Portfolio Section -->
+            <section class="portfolio section" id="portfolio">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -287,7 +282,7 @@
                     </div>
                     <div class="row">
                         <div class="portfolio-heading padd-15">
-                            <h2>My Last Projects :</h2>
+                            <h2>My Last Projects:</h2>
                         </div>
                     </div>
                     <div class="row">
@@ -295,26 +290,26 @@
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <a href="https://rohitnishanth.github.io/RohitRetreatRestaurant/" target="_blank">
-                                    <img src="./IMAGES/projectRestaurant copy.jpg"  alt="Restaurant Project img">
+                                        <img src="./IMAGES/projectRestaurant copy.jpg" alt="Restaurant Project">
                                     </a>
-                            </div>
+                                </div>
                             </div>
                         </div>
                         <div class="portfolio-item padd-15">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <a href="">
-                                    <img src="./IMAGES/portfolio project copy.png" alt="Portfolio Project ">
+                                    <a href="#">
+                                        <img src="./IMAGES/portfolio project copy.png" alt="Portfolio Project">
                                     </a>
-                            </div>
+                                </div>
                             </div>
                         </div>
                         <div class="portfolio-item padd-15">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <a href="https://rohitnishanth.github.io/projectDice/">
-                                    <img src="./IMAGES/DICE GAME copy.png" alt="Dice Game">
-                                </a>
+                                        <img src="./IMAGES/DICE GAME copy.png" alt="Dice Game">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -322,25 +317,25 @@
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
                                     <a href="https://rohitnishanth.github.io/projectDrums/">
-                                    <img src="./IMAGES/Drums Project copy.png" alt="Drums Project">
-                                </a>
+                                        <img src="./IMAGES/Drums Project copy.png" alt="Drums Project">
+                                    </a>
                                 </div>
                             </div>
                         </div>
-                       
                     </div>
                 </div>
             </section>
-            <section class="contact section main-content" id="contact">
+
+            <!-- Contact Section -->
+            <section class="contact section" id="contact">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
                             <h2>Contact Me</h2>
                         </div>
                     </div>
-                        
                     <div>
-                        <h3 class="contact-title padd-15">Have You Any Questions</h3>
+                        <h3 class="contact-title padd-15">Have You Any Questions?</h3>
                         <h4 class="contact-sub-title padd-15">I'm at your services</h4>
                         <div class="row">
                             <div class="contact-info-item padd-15">
@@ -361,11 +356,12 @@
                             <div class="contact-info-item padd-15">
                                 <div class="icon"><i class="fa fa-globe-europe"></i></div>
                                 <h4>Website</h4>
-                                <p><a href="https://github.com/RohitNishanth" >github.com/RohitNishanth</a></p>
+                                <p><a href="https://github.com/RohitNishanth">github.com/RohitNishanth</a></p>
                             </div>
                         </div>
                     </div>
                     <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+                   
                     <h4 class="contact-sub-title padd-15">I"M VERY RESPONSIVE TO MESSAGES</h4>
                     <div class="row">
                         <div class="contact-form padd-15">
